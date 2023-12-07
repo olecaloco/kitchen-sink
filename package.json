@@ -1,0 +1,28 @@
+{
+  "name": "tailwind",
+  "version": "1.0.0",
+  "description": "To run the thing:\r ```\r npx serve .\r ```",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://olecaloco@github.com/olecaloco/kitchen-sink.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olecaloco/kitchen-sink/issues"
+  },
+  "homepage": "https://github.com/olecaloco/kitchen-sink#readme",
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.3",
+    "astro": "^4.0.3",
+    "tailwindcss": "^3.3.6"
+  }
+}

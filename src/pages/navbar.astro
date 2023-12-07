@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/inner.astro";
+---
+
+<Layout title="navbar">
+    <div class="code-group my-20">
+        <div class="code-block">
+            <nav class="flex items-center justify-between h-14 text-white">
+                <button class="flex items-center justify-center w-8 h-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                    </svg>
+                </button>
+                <ul class="flex gap-8">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="flex items-center justify-center w-8 h-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+
+        <div class="code-output"></div>
+    </div>
+</Layout>
