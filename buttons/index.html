@@ -1,150 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buttons</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buttons</title>
 
-    <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="../assets/highlight.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-    <div class="container mx-auto w-full my-20">
-        <div class="mb-20">
-            <a href="../" class="inline-flex items-center gap-4 px-4 leading-8 text-white hover:bg-black/20 rounded">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-                </svg>                  
-                <span>Back</span>
-            </a>
-        </div>
-
-        <div>
-            <h2 class="text-4xl font-bold text-white mb-4">Solid</h2>
-            <div class="flex gap-2">
-                <button class="px-4 leading-8 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">Primary</button>
-                <button class="px-4 leading-8 text-white bg-red-500 hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">Danger</button>
-                <button class="px-4 leading-8 text-white bg-green-500 hover:bg-green-600 border border-green-500 hover:border-green-600 rounded">Success</button>
-                <button class="px-4 leading-8 text-gray-500 bg-gray-500/20 border border-gray-500/20 rounded" disabled>Disabled</button>
-                <button class="px-4 leading-8 text-white hover:bg-black/20 border border-transparent rounded">Text</button>
-                <button class="px-4 leading-8 text-gray-500 border border-transparent rounded" disabled>Disabled Text</button>
-            </div>
-        </div>
-
-        <pre>
-            <code class="language-html rounded bg-slate-900"><div class="flex gap-2">
-    <button class="px-4 leading-8 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">Primary</button>
-    <button class="px-4 leading-8 text-white bg-red-500 hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">Danger</button>
-    <button class="px-4 leading-8 text-white bg-green-500 hover:bg-green-600 border border-green-500 hover:border-green-600 rounded">Success</button>
-    <button class="px-4 leading-8 text-gray-500 bg-gray-500/20 border border-gray-500/20 rounded" disabled>Disabled</button>
-    <button class="px-4 leading-8 text-white hover:bg-black/20 border border-transparent rounded">Text</button>
-    <button class="px-4 leading-8 text-gray-500 border border-transparent rounded" disabled>Disabled Text</button>
-</div></code></pre>
-
-        <div class="mt-20">
-            <h2 class="text-4xl font-bold text-white mb-4">Outline</h2>
-            <div class="flex gap-2">
-                <button class="px-4 leading-8 text-blue-500 hover:text-white hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">Primary</button>
-                <button class="px-4 leading-8 text-red-500 hover:text-white hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">Danger</button>
-                <button class="px-4 leading-8 text-green-500 hover:text-white hover:bg-green-600 border border-green-500 hover:border-green-600 rounded">Success</button>
-            </div>
-        </div>
-
-<pre>
-    <code class="language-html rounded bg-slate-900"><div class="flex gap-2">
-    <button class="px-4 leading-8 text-blue-500 hover:text-white hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">Primary</button>
-    <button class="px-4 leading-8 text-red-500 hover:text-white hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">Danger</button>
-    <button class="px-4 leading-8 text-green-500 hover:text-white hover:bg-green-600 border border-green-500 hover:border-green-600 rounded">Success</button>
-</div></code></pre>
-
-        <div class="mt-20">
-            <h2 class="text-4xl font-bold text-white mb-4">Button with Icon</h2>
-            <div class="flex gap-2">
-                <button class="inline-flex items-center justify-center gap-2 px-4 leading-8 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">
+        <link rel="stylesheet" href="../assets/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="container mx-auto w-full my-20 px-4">
+            <div class="mb-20">
+                <a href="../" class="inline-flex items-center gap-4 px-4 leading-8 text-white hover:bg-black/20 rounded">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                    </svg>                      
-                    <span>Confirm</span>
-                </button>
-                <button class="inline-flex items-center justify-center gap-2 px-4 leading-8 text-white bg-red-500 hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">
-                    <span>Delete</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-                    </svg> 
-                </button>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                    </svg>
+                    <span>Back</span>
+                </a>
+            </div>
+
+            <div id="solid" class="code-group">
+                <h2 class="text-4xl font-bold text-white mb-4">Solid</h2>
+                <div class="code-block">
+                    <div class="flex gap-2">
+                        <button class="px-4 leading-8 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">Primary</button>
+                        <button class="px-4 leading-8 text-white bg-red-500 hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">Danger</button>
+                        <button class="px-4 leading-8 text-white bg-green-500 hover:bg-green-600 border border-green-500 hover:border-green-600 rounded">Success</button>
+                        <button class="px-4 leading-8 text-gray-500 bg-gray-500/20 border border-gray-500/20 rounded" disabled>Disabled</button>
+                        <button class="px-4 leading-8 text-white hover:bg-black/20 border border-transparent rounded">Text</button>
+                        <button class="px-4 leading-8 text-gray-500 border border-transparent rounded" disabled>Disabled Text</button>
+                    </div>
+                </div>
+
+                <div class="code-output"></div>
+            </div>
+
+            <div id="outline" class="code-group mt-20">
+                <h2 class="text-4xl font-bold text-white mb-4">Outline</h2>
+                <div class="code-block">
+                    <div class="flex gap-2">
+                        <button class="px-4 leading-8 text-blue-500 hover:text-white hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">Primary</button>
+                        <button class="px-4 leading-8 text-red-500 hover:text-white hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">Danger</button>
+                        <button class="px-4 leading-8 text-green-500 hover:text-white hover:bg-green-600 border border-green-500 hover:border-green-600 rounded">
+                            Success
+                        </button>
+                    </div>
+                </div>
+
+                <div class="code-output"></div>
+            </div>
+
+            <div id="with-icon" class="code-group mt-20">
+                <h2 class="text-4xl font-bold text-white mb-4">Button with Icon</h2>
+                <div class="code-block">
+                    <div class="flex gap-2">
+                        <button
+                            class="inline-flex items-center justify-center gap-2 px-4 leading-8 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                            <span>Confirm</span>
+                        </button>
+                        <button
+                            class="inline-flex items-center justify-center gap-2 px-4 leading-8 text-white bg-red-500 hover:bg-red-600 border border-red-500 hover:border-red-600 rounded"
+                        >
+                            <span>Delete</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="code-output"></div>
+            </div>
+
+            <div id="icon" class="code-group mt-20">
+                <h2 class="text-4xl font-bold text-white mb-4">Icon Only</h2>
+                <div class="code-block">
+                    <div class="flex gap-2">
+                        <button
+                            class="inline-flex items-center justify-center w-10 h-10 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                                />
+                            </svg>
+                        </button>
+                        <button
+                            class="inline-flex items-center justify-center w-10 h-10 text-red-500 hover:text-white hover:bg-red-600 border border-red-500 hover:border-red-600 rounded"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                                />
+                            </svg>
+                        </button>
+                        <button class="inline-flex items-center justify-center w-10 h-10 text-white hover:bg-black/20 border border-transparent rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="code-output"></div>
             </div>
         </div>
 
-        <pre>
-            <code class="language-html rounded bg-slate-900"><div class="flex gap-2">
-    <!-- Icon on left -->
-    <button class="inline-flex items-center justify-center gap-2 px-4 leading-8 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-        </svg>                      
-        <span>Confirm</span>
-    </button>
-
-    <!-- Icon on right -->
-    <button class="inline-flex items-center justify-center gap-2 px-4 leading-8 text-white bg-red-500 hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">
-        <span>Delete</span>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
-        </svg> 
-    </button>
-</div></code></pre>
-
-
-
-        <div class="mt-20">
-            <h2 class="text-4xl font-bold text-white mb-4">Icon Only</h2>
-            <div class="flex gap-2">
-                <button class="inline-flex items-center justify-center w-10 h-10 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-                    </svg>                      
-                </button>
-                <button class="inline-flex items-center justify-center w-10 h-10 text-red-500 hover:text-white hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
-                    </svg>                      
-                </button>
-                <button class="inline-flex items-center justify-center w-10 h-10 text-white hover:bg-black/20 border border-transparent rounded">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
-                    </svg>                      
-                </button>
-            </div>
-        </div>
-
-<pre>
-    <code class="language-html rounded bg-slate-900"><div class="flex gap-2">
-    <button class="inline-flex items-center justify-center w-10 h-10 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-        </svg>                      
-    </button>
-
-    <button class="inline-flex items-center justify-center w-10 h-10 text-red-500 hover:text-white hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
-        </svg>                      
-    </button>
-
-    <button class="inline-flex items-center justify-center w-10 h-10 text-white bg-green-500 hover:bg-green-600 border border-green-500 hover:border-green-600 rounded">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3v6.75m0 0l-3-3m3 3l3-3M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
-        </svg>                      
-    </button>
-</div></code></pre>
-
-        </div>
-
-
-
-    <script src="../assets/highlight.js"></script>
-    <script src="../assets/script.js"></script>
-</body>
+        <script src="https://unpkg.com/shiki"></script>
+        <script src="../assets/script.js"></script>
+    </body>
 </html>

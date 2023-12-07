@@ -6,12 +6,11 @@
     <title>Container</title>
 
     <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="../assets/highlight.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     
-    <div class="container mx-auto w-full mt-20">
+    <div class="container mx-auto w-full mt-20 px-4">
         <div class="mb-20">
             <a href="../" class="inline-flex items-center gap-4 px-4 leading-8 text-white hover:bg-black/20 rounded">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -20,24 +19,20 @@
                 <span>Back</span>
             </a>
         </div>
-        <div>
-            <div class="container mx-auto mb-4 h-16 bg-pink-200 rounded"></div>
-            <div class="container mx-auto mb-4 w-full max-w-xl h-16 text-center bg-pink-200 rounded">xl</div>
-            <div class="container mx-auto mb-4 w-full max-w-lg h-16 text-center bg-pink-200 rounded">lg</div>
-            <div class="container mx-auto mb-4 w-full max-w-md h-16 text-center bg-pink-200 rounded">md</div>
-            <div class="container mx-auto mb-4 w-full max-w-sm h-16 text-center bg-pink-200 rounded">sm</div>
+
+        <div class="code-group">
+            <div class="code-block">
+                <div class="container mx-auto mb-4 h-16 bg-pink-200 rounded"></div>
+                <div class="container mx-auto mb-4 w-full max-w-xl h-16 text-center bg-pink-200 rounded">xl</div>
+                <div class="container mx-auto mb-4 w-full max-w-lg h-16 text-center bg-pink-200 rounded">lg</div>
+                <div class="container mx-auto mb-4 w-full max-w-md h-16 text-center bg-pink-200 rounded">md</div>
+                <div class="container mx-auto mb-4 w-full max-w-sm h-16 text-center bg-pink-200 rounded">sm</div>
+            </div>
+
+            <div class="code-output"></div>
         </div>
 
-        <pre>
-            <code class="language-html rounded bg-slate-900"><!-- h-16 text-center bg-pink-200 rounded is only for showing the example -->
-<div class="container mx-auto mb-4 h-16 bg-pink-200 rounded"></div>
-<div class="container mx-auto mb-4 w-full max-w-xl h-16 text-center bg-pink-200 rounded">xl</div>
-<div class="container mx-auto mb-4 w-full max-w-lg h-16 text-center bg-pink-200 rounded">lg</div>
-<div class="container mx-auto mb-4 w-full max-w-md h-16 text-center bg-pink-200 rounded">md</div>
-<div class="container mx-auto mb-4 w-full max-w-sm h-16 text-center bg-pink-200 rounded">sm</div></code></pre>
-    </div>
-
-    <script src="../assets/highlight.js"></script>
+    <script src="https://unpkg.com/shiki"></script>
     <script src="../assets/script.js"></script>
 </body>
 </html>
