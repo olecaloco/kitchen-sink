@@ -1,0 +1,17 @@
+---
+const { items } = Astro.props;
+---
+
+<nav class="relative mb-20 md:mb-0 md:sticky md:top-24 md:self-start col-span-3">
+    <ul>
+        {
+            items.map((item) => (
+                <li class="mb-4 last:mb-0">
+                    <a class="text-gray-400 hover:text-white active:text-white" href={item.href}>
+                        {item.label}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</nav>

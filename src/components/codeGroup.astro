@@ -1,8 +1,16 @@
 ---
-const { title } = Astro.props;
+const { id, title, margins = "default" } = Astro.props;
+
+const marginVariants = {
+    top: "mt-20",
+    bottom: "mb-20",
+    default: "my-20",
+};
+
+const customClass = `code-group ${marginVariants[margins]}`;
 ---
 
-<div class="code-group my-20">
+<div id={id} class={customClass}>
     {title && <h2 class="text-4xl font-bold text-white mb-4">{title}</h2>}
 
     <div class="code-block">

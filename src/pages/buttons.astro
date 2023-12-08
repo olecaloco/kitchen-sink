@@ -1,11 +1,18 @@
 ---
 import { CodeGroup } from "../components";
 import Layout from "../layouts/inner.astro";
+
+const navItems = [
+    { href: "#solid", label: "Solid" },
+    { href: "#outline", label: "Outline" },
+    { href: "#with-icon", label: "Button with Icon" },
+    { href: "#icon", label: "Icon Only" },
+];
 ---
 
-<Layout title="Buttons">
-    <CodeGroup title="Solid">
-        <div class="flex gap-2">
+<Layout navItems={navItems} title="Buttons">
+    <CodeGroup id="solid" title="Solid" margins="bottom">
+        <div class="flex flex-wrap gap-2">
             <button class="px-4 leading-8 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">Primary</button>
             <button class="px-4 leading-8 text-white bg-red-500 hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">Danger</button>
             <button class="px-4 leading-8 text-white bg-green-500 hover:bg-green-600 border border-green-500 hover:border-green-600 rounded">Success</button>
@@ -15,7 +22,7 @@ import Layout from "../layouts/inner.astro";
         </div>
     </CodeGroup>
 
-    <CodeGroup title="Outline">
+    <CodeGroup id="outline" title="Outline">
         <div class="flex gap-2">
             <button class="px-4 leading-8 text-blue-500 hover:text-white hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">Primary</button>
             <button class="px-4 leading-8 text-red-500 hover:text-white hover:bg-red-600 border border-red-500 hover:border-red-600 rounded">Danger</button>
@@ -23,7 +30,7 @@ import Layout from "../layouts/inner.astro";
         </div>
     </CodeGroup>
 
-    <CodeGroup title="Button with Icon">
+    <CodeGroup id="with-icon" title="Button with Icon">
         <div class="flex gap-2">
             <button class="inline-flex items-center justify-center gap-2 px-4 leading-8 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -40,7 +47,7 @@ import Layout from "../layouts/inner.astro";
         </div>
     </CodeGroup>
 
-    <CodeGroup title="Icon Only">
+    <CodeGroup id="icon" title="Icon Only">
         <div class="flex gap-2">
             <button class="inline-flex items-center justify-center w-10 h-10 text-white bg-blue-500 hover:bg-blue-600 border border-blue-500 hover:border-blue-600 rounded">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

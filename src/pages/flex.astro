@@ -1,0 +1,94 @@
+---
+import { CodeGroup } from "../components";
+import Layout from "../layouts/inner.astro";
+
+const navItems = [
+    { href: "#default", label: "Default" },
+    { href: "#gap", label: "Gap" },
+    { href: "#justify-start", label: "Horizontal Align: Left" },
+    { href: "#justify-center", label: "Horizontal Align: Center" },
+    { href: "#justify-end", label: "Horizontal Align: Right" },
+    { href: "#align-start", label: "Vertical Align: Top" },
+    { href: "#align-center", label: "Vertical Align: Center" },
+    { href: "#align-end", label: "Vertical Align: Bottom" },
+    { href: "#layout", label: "Layout" },
+];
+---
+
+<Layout navItems={navItems} title="Flex">
+    <CodeGroup id="default" title="Default" margins="bottom">
+        <div class="flex text-white">
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-1</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-2</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-3</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="gap" title="Gap">
+        <div class="flex gap-2 text-white">
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-1</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-2</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-3</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="justify-start" title="Horizontal Positioning: Align Left">
+        <div class="flex justify-start gap-2 text-white">
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-1</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-2</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-3</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="justify-center" title="Horizontal Positioning: Align Right">
+        <div class="flex justify-center gap-2 text-white">
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-1</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-2</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-3</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="justify-end" title="Horizontal Positioning: Align Right">
+        <div class="flex justify-end gap-2 text-white">
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-1</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-2</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-3</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="align-start" title="Vertical Positioning: Align Left">
+        <div class="flex items-start gap-2 h-24 bg-slate-950 rounded border border-gray-600 p-4 text-white">
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-1</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-2</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-3</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="align-center" title="Vertical Positioning: Align Center">
+        <div class="flex items-center gap-2 h-24 bg-slate-950 rounded border border-gray-600 p-4 text-white">
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-1</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-2</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-3</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="align-end" title="Vertical Positioning: Align Right">
+        <div class="flex items-end gap-2 h-24 bg-slate-950 rounded border border-gray-600 p-4 text-white">
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-1</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-2</div>
+            <div class="px-3 leading-8 bg-pink-300 rounded">item-3</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="layout" title="Layout">
+        <div class="flex flex-row gap-2 h-96">
+            <aside class="flex items-center justify-center w-24 h-full bg-pink-300 rounded">Sidebar</aside>
+            <div class="flex-1 flex flex-col gap-2">
+                <header class="flex items-center justify-center h-16 bg-red-300 rounded">Header</header>
+                <section class="flex items-center justify-center flex-1 bg-green-300 rounded">Main</section>
+                <footer class="flex items-center justify-center h-16 bg-orange-300 rounded">Footer</footer>
+            </div>
+            <aside class="flex items-center justify-center w-24 h-full bg-blue-300 rounded">Sidebar</aside>
+        </div>
+    </CodeGroup>
+</Layout>

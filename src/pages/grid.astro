@@ -1,0 +1,47 @@
+---
+import { CodeGroup } from "../components";
+import Layout from "../layouts/inner.astro";
+
+const navItems = [
+    { href: "#columns", label: "Columns" },
+    { href: "#rows", label: "Rows" },
+    { href: "#layout", label: "Layout" },
+];
+---
+
+<Layout navItems={navItems} title="Grid">
+    <CodeGroup id="columns" title="Columns" margins="bottom">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">1</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">2</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">3</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">4</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">5</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">6</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">7</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">8</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">9</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">10</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">11</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">12</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="rows" title="Rows">
+        <div class="grid grid-rows-3 gap-4">
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">1</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">2</div>
+            <div class="w-full h-8 text-white text-center bg-pink-300 rounded">3</div>
+        </div>
+    </CodeGroup>
+
+    <CodeGroup id="layout" title="Layout">
+        <div class="grid grid-cols-12 grid-rows-6 grid-flow-col gap-2 h-96">
+            <aside class="flex items-center justify-center row-span-6 col-span-2 h-full bg-pink-300 rounded">Sidebar</aside>
+            <header class="flex items-center justify-center col-span-7 h-full bg-red-300 rounded">Header</header>
+            <section class="flex items-center justify-center row-span-4 col-span-7 bg-green-300 rounded">Main</section>
+            <footer class="flex items-center justify-center col-span-7 bg-orange-300 h-full">Footer</footer>
+            <aside class="flex items-center justify-center col-span-3 row-span-6 h-full bg-blue-300 rounded">Another Sidebar</aside>
+        </div>
+    </CodeGroup>
+</Layout>
