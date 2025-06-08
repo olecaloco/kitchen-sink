@@ -1,4 +1,5 @@
-To run the thing:
+To start dev:
+
 ```
-npx serve .
+npm run dev
 ```
