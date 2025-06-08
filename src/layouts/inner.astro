@@ -30,8 +30,50 @@ const contentGridClass = hasNavItems ? "col-span-9" : "col-span-12";
                 </div>
             </div>
         </div>
-
-        <script is:inline src="https://unpkg.com/shiki"></script>
-        <script is:inline src="/kitchen-sink/assets/script.js"></script>
     </body>
+
+    <script>
+        import { codeToHtml } from "shiki";
+
+        const codeGroups = document.querySelectorAll(".code-group");
+
+        codeGroups.forEach(async (group) => {
+            const codeBlock = group.querySelector(".code-block");
+            const codeOutput = group.querySelector(".code-output");
+            const content = codeBlock.innerHTML;
+
+            const splittedLines = content.split("\n");
+            const dirtyLines = splittedLines.filter((line) => {
+                if (!line.replace(/\s/g, "").length) return false;
+                return true;
+            });
+
+            let initialCount = 0;
+            const lines = dirtyLines.map((line, index) => {
+                let count = 0;
+                let html = "";
+
+                for (let char of line) {
+                    if (char === " ") count++;
+                    else break;
+                }
+
+                if (index === 0) {
+                    initialCount = count;
+                }
+
+                for (let i = 0; i < count - initialCount; i++) {
+                    html += " ";
+                }
+
+                html += line.trim();
+
+                return html;
+            });
+
+            const cleanedHTML = lines.join("\n");
+            const code = await codeToHtml(cleanedHTML, { theme: "one-dark-pro", lang: "html" });
+            codeOutput.innerHTML = code;
+        });
+    </script>
 </html>
